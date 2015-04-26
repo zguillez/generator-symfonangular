@@ -11,7 +11,6 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
 
-    // Have Yeoman greet the user.
     this.log(yosay('Welcome to the fabulous ' + chalk.red('Symfonangular') + ' generator!'));
 
     var prompts = [];
@@ -25,6 +24,8 @@ module.exports = yeoman.generators.Base.extend({
   writing: {
     app: function () {
       this.fs.copy(this.templatePath('composer.*'), this.destinationPath(''));
+      this.fs.copy(this.templatePath('package.json'), this.destinationPath('package.json'));
+      this.fs.copy(this.templatePath('bower.json'), this.destinationPath('bower.json'));
       this.fs.copy(this.templatePath('app'), this.destinationPath('app'));
       this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
       this.fs.copy(this.templatePath('web'), this.destinationPath('web'));
@@ -38,8 +39,8 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    //this.installDependencies();
     this.spawnCommand('./composer.phar', ['self-update']);
     this.spawnCommand('./composer.phar', ['install']);
+    this.installDependencies();
   }
 });

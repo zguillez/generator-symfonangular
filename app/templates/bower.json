@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "html5shiv": "~3.7.2",
+    "modernizr": "~2.8.1",
+    "normalize.css": "~3.0.1",
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "jquery": "~1.11.1",
+    "animate.css": "~3.2.6"
+  },
+  "devDependencies": {}
+}
