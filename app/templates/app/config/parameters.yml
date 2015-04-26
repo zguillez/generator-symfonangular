@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 213.192.239.108
+    database_port: '3306'
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 53ee05f6487de71fb861c6ee8242e9632190b651
+    database_name: CH212vip
+    database_user: linkemann
+    database_password: Linkemann2015

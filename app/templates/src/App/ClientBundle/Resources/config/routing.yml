@@ -1,0 +1,3 @@
+_home:
+    path:     /
+    defaults: { _controller: AppClientBundle:App:home }

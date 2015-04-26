@@ -12,50 +12,34 @@ module.exports = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay(
-      'Welcome to the fabulous ' + chalk.red('Symfonangular') + ' generator!'
-    ));
+    this.log(yosay('Welcome to the fabulous ' + chalk.red('Symfonangular') + ' generator!'));
 
-    var prompts = [{
-      type: 'confirm',
-      name: 'someOption',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+    var prompts = [];
 
     this.prompt(prompts, function (props) {
       this.props = props;
-      // To access props later use this.props.someOption;
-
       done();
     }.bind(this));
   },
 
   writing: {
     app: function () {
-      this.fs.copy(
-        this.templatePath('_package.json'),
-        this.destinationPath('package.json')
-      );
-      this.fs.copy(
-        this.templatePath('_bower.json'),
-        this.destinationPath('bower.json')
-      );
+      this.fs.copy(this.templatePath('composer.*'), this.destinationPath(''));
+      this.fs.copy(this.templatePath('app'), this.destinationPath('app'));
+      this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
+      this.fs.copy(this.templatePath('web'), this.destinationPath('web'));
     },
 
     projectfiles: function () {
-      this.fs.copy(
-        this.templatePath('editorconfig'),
-        this.destinationPath('.editorconfig')
-      );
-      this.fs.copy(
-        this.templatePath('jshintrc'),
-        this.destinationPath('.jshintrc')
-      );
+      this.fs.copy(this.templatePath('editorconfig'), this.destinationPath('.editorconfig'));
+      this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
+
     }
   },
 
   install: function () {
-    this.installDependencies();
+    //this.installDependencies();
+    this.spawnCommand('./composer.phar', ['self-update']);
+    this.spawnCommand('./composer.phar', ['install']);
   }
 });
