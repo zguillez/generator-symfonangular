@@ -6,6 +6,12 @@ module.exports = function (grunt) {
       src: '**/*',
       dest: 'web/scripts',
       expand: true
+    },
+    templates: {
+      cwd: 'src/App/ClientBundle/Resources/views/Page/templates',
+      src: '**/*',
+      dest: 'web/templates',
+      expand: true
     }
   });
 
