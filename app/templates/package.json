@@ -6,10 +6,10 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
+    "load-grunt-tasks": "~3.1.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
     "bower": "~1.4.1"
-  },
-  "scripts": {
-    "clean": "rimraf node_modules web/bower_components .tmp dist"
   },
   "engines": {
     "node": ">=0.10.0"
