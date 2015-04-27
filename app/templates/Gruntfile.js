@@ -16,6 +16,14 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', ['clean', 'copy']);
 
-  grunt.registerTask('serve', ['clean:scripts', 'copy', 'php:server', 'watch']);
+  grunt.registerTask('serve', function (env) {
+
+    if (env === 'prod') {
+      grunt.task.run(['clean', 'copy', 'php:prod', 'watch']);
+    } else {
+      grunt.task.run(['clean', 'copy', 'php:dev', 'watch']);
+    }
+
+  });
 
 };

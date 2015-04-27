@@ -2,14 +2,24 @@ module.exports = function (grunt) {
 
   grunt.config.set('php', {
 
-    server: {
+    dev: {
       options: {
         protocol: 'http',
         hostname: 'localhost',
         port: '8000',
         base: 'web',
-        keepalive: true,
-        open: true
+        open: '/app_dev.php',
+        keepalive: true
+      }
+    },
+    prod: {
+      options: {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8000',
+        base: 'web',
+        open: '/app.php',
+        keepalive: true
       }
     }
 
