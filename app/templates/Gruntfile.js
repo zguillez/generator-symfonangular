@@ -12,6 +12,8 @@ module.exports = function (grunt) {
   require('./grunt/clean')(grunt);
   require('./grunt/copy')(grunt);
   require('./grunt/shell')(grunt);
+  require('./grunt/uglify')(grunt);
+  require('./grunt/sass')(grunt);
 
   grunt.registerTask('default', ['build']);
 
@@ -20,9 +22,9 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', function (env) {
 
     if (env === 'prod') {
-      grunt.task.run(['clean', 'copy', 'shell:assetic', 'php:prod', 'watch']);
+      grunt.task.run(['clean', 'copy', 'uglify', 'sass:prod', 'shell:assetic', 'php:prod', 'watch']);
     } else {
-      grunt.task.run(['clean', 'copy', 'php:dev', 'watch']);
+      grunt.task.run(['clean', 'copy', 'sass:dev', 'php:dev', 'watch']);
     }
 
   });
