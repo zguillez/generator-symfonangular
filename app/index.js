@@ -41,8 +41,10 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   install: function () {
-    this.spawnCommand('./composer.phar', ['self-update']);
-    this.spawnCommand('./composer.phar', ['install']);
-    this.installDependencies();
+    var scope = this;
+    this.installDependencies(function () {
+      scope.spawnCommand('./composer.phar', ['self-update']);
+      scope.spawnCommand('./composer.phar', ['install']);
+    });
   }
 });
