@@ -45,3 +45,19 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 MIT
+
+```bash
+sudo npm update
+```
+
+```bash
+bower update
+```
+
+```bash
+./composer.phar install
+```
+
+```bash
+grunt serve
+```
