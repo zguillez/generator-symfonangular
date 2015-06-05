@@ -4,14 +4,14 @@
 
 {% block content %}
 
-    <div id="container" class="container">
-        {% include 'AppClientBundle::Page/modules/timeline.html.twig' %}
-        {% include 'AppClientBundle::Page/modules/ecualizador.html.twig' %}
-        <div class="row">
-            <div class="col-xs-12">
-                <div ng-view></div>
-            </div>
-        </div>
+  <div id="container" class="container">
+    {% include 'AppClientBundle::Page/modules/page1_1.html.twig' %}
+    {% include 'AppClientBundle::Page/modules/page1_2.html.twig' %}
+    <div class="row">
+      <div class="col-xs-12">
+        <div ng-view></div>
+      </div>
     </div>
+  </div>
 
 {% endblock %}

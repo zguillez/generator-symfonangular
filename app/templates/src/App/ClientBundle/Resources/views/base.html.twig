@@ -1,47 +1,49 @@
 {% extends '::base.html.twig' %}
 
 {% block stylesheets %}
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-    {% stylesheets '@AppClientBundle/Resources/public/css/*.css' filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}"/>
-    {% endstylesheets %}
+  {% stylesheets
+  '@AppClientBundle/Resources/public/css/*.css' filter='cssrewrite' %}
+  <link rel="stylesheet" href="{{ asset_url }}"/>
+  {% endstylesheets %}
 {% endblock %}
 
 {% block javascripts %}
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
-    {% javascripts '@AppClientBundle/Resources/public/js/*.js' %}
-    <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
+  <script src="{{ asset('scripts/require.js') }}"></script>
+  <script src="{{ asset('scripts/jquery.min.js') }}"></script>
+  <script src="{{ asset('scripts/angular.min.js') }}"></script>
+  <script src="{{ asset('scripts/angular-route.min.js') }}"></script>
+  <script src="{{ asset('scripts/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('scripts/html5shiv.min.js') }}"></script>
+  {% javascripts
+  '@AppClientBundle/Resources/public/js/*.js' %}
+  <script src="{{ asset_url }}"></script>
+  {% endjavascripts %}
 {% endblock %}
 
 {% block body %}
-    <div id="wrapper">
-        <div id="wrapper-inner">
-            <div id="background">
-                {% block background %}{% endblock %}
-            </div>
-            <div id="content">
-                {% block content %}{% endblock %}
-            </div>
-            <header>
-                <div id="logo-box">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo"/>
-                </div>
-                {% block header_nav %}
-                    <nav>
-                        <ul>
-                            <li class="botcerrar"><a href="{{ path('_home') }}">Home</a></li>
-                        </ul>
-                    </nav>
-                {% endblock %}
-            </header>
-            <footer>
-                {% block footer %}{% endblock %}
-            </footer>
+  <div id="wrapper">
+    <div id="wrapper-inner">
+      <div id="background">
+        {% block background %}{% endblock %}
+      </div>
+      <div id="content">
+        {% block content %}{% endblock %}
+      </div>
+      <header>
+        <div id="logo-box">
+          <img src="{{ asset('images/logo.png') }}" alt="Logo"/>
         </div>
+        {% block header_nav %}
+          <nav>
+            <ul>
+              <li class="botcerrar"><a href="{{ path('_home') }}">Home</a></li>
+            </ul>
+          </nav>
+        {% endblock %}
+      </header>
+      <footer>
+        {% block footer %}{% endblock %}
+      </footer>
     </div>
+  </div>
 {% endblock %}

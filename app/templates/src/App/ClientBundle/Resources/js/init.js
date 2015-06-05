@@ -4,17 +4,17 @@ app.config(['$interpolateProvider', '$routeProvider', function ($interpolateProv
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
   //-----------------------------------
-  $routeProvider.when('/timeline', {
-    templateUrl: 'modules/timeline.html',
-    controller: 'timelineController'
-  }).when('/ecualizador', {
-    templateUrl: 'modules/ecualizador.html',
-    controller: 'ecualizadorController'
+  $routeProvider.when('/page1_1', {
+    templateUrl: 'modules/page1_1.html',
+    controller: 'page1_1_Controller'
+  }).when('/page1_2', {
+    templateUrl: 'modules/page1_2.html',
+    controller: 'page1_2_Controller'
   }).when('/intro', {
     templateUrl: 'templates/intro.html',
     controller: 'introController'
   }).otherwise({
-    redirectTo: '/timeline'
+    redirectTo: '/page1_1'
   });
 }]);
 //-------------------------------------------------------------------------
@@ -26,13 +26,13 @@ app.controller('appController', ['$scope', '$location', function ($scope, $locat
     $location.path('/' + view);
   };
 }]);
-app.controller('timelineController', ['$scope', function ($scope) {
-  $scope.pagina = "timeline";
+app.controller('page1_1_Controller', ['$scope', function ($scope) {
+  $scope.pagina = "page1_1";
   $scope.container.addClass('container');
   $scope.container.removeClass('container-fluid');
 }]);
-app.controller('ecualizadorController', ['$scope', function ($scope) {
-  $scope.pagina = "ecualizador";
+app.controller('page1_2_Controller', ['$scope', function ($scope) {
+  $scope.pagina = "page1_2";
   $scope.container.removeClass('container');
   $scope.container.addClass('container-fluid');
 }]);

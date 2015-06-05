@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         style: 'nested'
       },
       files: [{
-        cwd: 'src/App/ClientBundle/Resources/public',
+        cwd: 'src/App/ClientBundle/Resources/css',
         dest: 'src/App/ClientBundle/Resources/public/css',
         src: ['*.scss', '*.sass'],
         ext: '.css',
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
         style: 'compressed'
       },
       files: [{
-        cwd: 'src/App/ClientBundle/Resources/public',
+        cwd: 'src/App/ClientBundle/Resources/css',
         dest: 'src/App/ClientBundle/Resources/public/css',
         src: ['*.scss', '*.sass'],
         ext: '.css',

@@ -10,7 +10,8 @@
     "angular": "~1.4.0",
     "bootstrap": "~3.3.4",
     "jquery": "~1.11.1",
-    "animate.css": "~3.2.6"
+    "animate.css": "~3.2.6",
+    "angular-route": "~1.4.0"
   },
   "devDependencies": {}
 }

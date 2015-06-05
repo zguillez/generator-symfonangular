@@ -11,6 +11,6 @@ class AppController extends Controller
 	{
 		$common = $this->container->get('common');
 		$test = $common->getTest();
-		return $this->render('AppClientBundle:Page:home.html.twig', array('pagina1' => 'timeline', 'pagina2' => 'ecualizador'));
+		return $this->render('AppClientBundle:Page:home.html.twig', array('pagina1' => 'pag_1_1', 'pagina2' => 'pag_1_2'));
 	}
 }

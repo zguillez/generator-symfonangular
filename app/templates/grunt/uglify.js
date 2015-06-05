@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         preserveComments: 'no',
         sourceMap: false
       },
-      cwd: 'src/App/ClientBundle/Resources/public',
+      cwd: 'src/App/ClientBundle/Resources/js',
       dest: 'src/App/ClientBundle/Resources/public/js',
       src: '*.js',
       ext: '.js',
