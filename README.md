@@ -1,6 +1,6 @@
 # generator-symfonangular [![Build Status](https://secure.travis-ci.org/zguillez/generator-symfonangular.png?branch=master)](https://travis-ci.org/zguillez/generator-symfonangular)
 
-> [Yeoman](http://yeoman.io) generator
+> [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
 
 ## Getting Started
