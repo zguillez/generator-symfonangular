@@ -6,8 +6,8 @@
   "main": "app/index.js",
   "repository": "zguillez/generator-symfonangular",
   "author": {
-    "name": "",
-    "email": "",
+    "name": "Guillermo de la Iglesia",
+    "email": "mail@zguillez.io",
     "url": "https://github.com/zguillez"
   },
   "scripts": {
