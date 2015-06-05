@@ -1,6 +1,9 @@
 {% extends '::base.html.twig' %}
 
 {% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('lib/css/normalize.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('lib/css/animate.min.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('lib/css/bootstrap.min.css') }}"/>
   {% stylesheets
   '@AppClientBundle/Resources/public/css/*.css' filter='cssrewrite' %}
   <link rel="stylesheet" href="{{ asset_url }}"/>
@@ -8,12 +11,12 @@
 {% endblock %}
 
 {% block javascripts %}
-  <script src="{{ asset('scripts/require.js') }}"></script>
-  <script src="{{ asset('scripts/jquery.min.js') }}"></script>
-  <script src="{{ asset('scripts/angular.min.js') }}"></script>
-  <script src="{{ asset('scripts/angular-route.min.js') }}"></script>
-  <script src="{{ asset('scripts/bootstrap.min.js') }}"></script>
-  <script src="{{ asset('scripts/html5shiv.min.js') }}"></script>
+  <script src="{{ asset('lib/scripts/require.js') }}"></script>
+  <script src="{{ asset('lib/scripts/jquery.min.js') }}"></script>
+  <script src="{{ asset('lib/scripts/angular.min.js') }}"></script>
+  <script src="{{ asset('lib/scripts/angular-route.min.js') }}"></script>
+  <script src="{{ asset('lib/scripts/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('lib/scripts/html5shiv.min.js') }}"></script>
   {% javascripts
   '@AppClientBundle/Resources/public/js/*.js' %}
   <script src="{{ asset_url }}"></script>
@@ -22,28 +25,24 @@
 
 {% block body %}
   <div id="wrapper">
-    <div id="wrapper-inner">
-      <div id="background">
-        {% block background %}{% endblock %}
+    <header>
+      <div id="logo-box">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo"/>
       </div>
-      <div id="content">
-        {% block content %}{% endblock %}
-      </div>
-      <header>
-        <div id="logo-box">
-          <img src="{{ asset('images/logo.png') }}" alt="Logo"/>
-        </div>
-        {% block header_nav %}
-          <nav>
-            <ul>
-              <li class="botcerrar"><a href="{{ path('_home') }}">Home</a></li>
-            </ul>
-          </nav>
-        {% endblock %}
-      </header>
-      <footer>
-        {% block footer %}{% endblock %}
-      </footer>
-    </div>
+      {% block header_nav %}
+        <nav>
+          <ul>
+            <li class="botHome"><a href="{{ path('_home') }}">Home</a></li>
+            <li class="botHome"><a ng-click="gotoView('home/intro')">Intro</a></li>
+          </ul>
+        </nav>
+      {% endblock %}
+    </header>
+    <secction id="content">
+      {% block content %}{% endblock %}
+    </secction>
+    <footer>
+      {% block footer %}<p>@Symfonangular 2015</p>{% endblock %}
+    </footer>
   </div>
 {% endblock %}

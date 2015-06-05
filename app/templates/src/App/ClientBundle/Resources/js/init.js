@@ -4,40 +4,35 @@ app.config(['$interpolateProvider', '$routeProvider', function ($interpolateProv
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
   //-----------------------------------
-  $routeProvider.when('/page1_1', {
-    templateUrl: 'modules/page1_1.html',
-    controller: 'page1_1_Controller'
-  }).when('/page1_2', {
-    templateUrl: 'modules/page1_2.html',
-    controller: 'page1_2_Controller'
-  }).when('/intro', {
+  $routeProvider.when('/home/a', {
+    templateUrl: 'modules/slideA.html',
+    controller: 'homeSlideAController'
+  }).when('/home/b', {
+    templateUrl: 'modules/slideB.html',
+    controller: 'homeSlideBController'
+  }).when('/home/intro', {
     templateUrl: 'templates/intro.html',
     controller: 'introController'
   }).otherwise({
-    redirectTo: '/page1_1'
+    redirectTo: '/home/a'
   });
 }]);
 //-------------------------------------------------------------------------
 app.controller('appController', ['$scope', '$location', function ($scope, $location) {
   /* test */
-  console.log(3);
   $scope.container = angular.element(document.querySelector('#container'));
   $scope.gotoView = function (view) {
     $location.path('/' + view);
   };
 }]);
-app.controller('page1_1_Controller', ['$scope', function ($scope) {
-  $scope.pagina = "page1_1";
-  $scope.container.addClass('container');
-  $scope.container.removeClass('container-fluid');
+app.controller('homeSlideAController', ['$scope', function ($scope) {
+  $scope.subtitle = "Subtitle SlideA from Angular";
 }]);
-app.controller('page1_2_Controller', ['$scope', function ($scope) {
-  $scope.pagina = "page1_2";
-  $scope.container.removeClass('container');
-  $scope.container.addClass('container-fluid');
+app.controller('homeSlideBController', ['$scope', function ($scope) {
+  $scope.subtitle = "Subtitle SlideB from Angular";
 }]);
 app.controller('introController', ['$scope', function ($scope) {
-  $scope.pagina = "intro";
-  $scope.container.removeClass('container');
-  $scope.container.addClass('container-fluid');
+  $scope.title = title;
+  $scope.subtitle = "Text from Symfony to Angular";
+  $scope.text = "intro";
 }]);
