@@ -17,14 +17,14 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['build']);
 
-  grunt.registerTask('build', ['clean', 'copy']);
+  grunt.registerTask('build', ['clean', 'sass:prod', 'uglify', 'copy', 'shell:assetic']);
 
   grunt.registerTask('serve', function (env) {
 
     if (env === 'prod') {
-      grunt.task.run(['clean', 'copy', 'uglify', 'sass:prod', 'shell:assetic', 'php:prod', 'watch']);
+      grunt.task.run(['clean', 'sass:prod', 'uglify', 'copy', 'shell:assetic', 'php:prod', 'watch']);
     } else {
-      grunt.task.run(['clean', 'copy', 'sass:dev', 'php:dev', 'watch']);
+      grunt.task.run(['clean', 'sass:dev', 'copy', 'php:dev', 'watch']);
     }
 
   });

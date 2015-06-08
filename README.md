@@ -43,7 +43,7 @@ bower update
 ```
 ## Requeriments
 
-###NodeJS
+### NodeJS
 
 * [https://nodejs.org/](https://nodejs.org/)
 
@@ -53,7 +53,7 @@ For update npm
 sudo npm install npm -g
 ```
 
-###Bower
+### Bower
 
 ```bash
 npm install -g bower
@@ -67,7 +67,7 @@ Symfony routing on file */src/App/ClientBundle/Resources/config/routing.yml*:
 	    path:     /
 	    defaults: { _controller: AppClientBundle:App:home }
  
-Angular routing on file */src/App/ClientBundle/Resources/js/init.js*:
+AngularJS routing on file */src/App/ClientBundle/Resources/js/init.js*:
 
 	$routeProvider.when('/home/a', {
 	    templateUrl: 'modules/slideA.html',
@@ -82,7 +82,50 @@ Angular routing on file */src/App/ClientBundle/Resources/js/init.js*:
 	    redirectTo: '/home/a'
 	  });
 
-### Working with templates
+### AngularJS controllers
+Place on folder: */src/App/ClientBundle/Resources/js/*
+
+### CSS styles
+Place on folder: */src/App/ClientBundle/Resources/css/* with .sass or .scss format
+
+### Conpiled files
+
+Grunt **serve** and **build** will compile .sass and .scss files into css files on folder:
+*/src/App/ClientBundle/Resources/public/css*
+
+And Javascript files will miminized into folder:
+*/src/App/ClientBundle/Resources/public/js*
+
+Symfony will include this files into template by Assetic mode:
+
+	{% block stylesheets %}
+	  <link rel="stylesheet" href="{{ asset('lib/css/normalize.css') }}"/>
+	  <link rel="stylesheet" href="{{ asset('lib/css/animate.min.css') }}"/>
+	  <link rel="stylesheet" href="{{ asset('lib/css/bootstrap.min.css') }}"/>
+	  {% stylesheets
+	  '@AppClientBundle/Resources/public/css/*.css' filter='cssrewrite' %}
+	  <link rel="stylesheet" href="{{ asset_url }}"/>
+	  {% endstylesheets %}
+	{% endblock %}
+	
+	{% block javascripts %}
+	  <script src="{{ asset('lib/scripts/require.js') }}"></script>
+	  <script src="{{ asset('lib/scripts/jquery.min.js') }}"></script>
+	  <script src="{{ asset('lib/scripts/angular.min.js') }}"></script>
+	  <script src="{{ asset('lib/scripts/angular-route.min.js') }}"></script>
+	  <script src="{{ asset('lib/scripts/bootstrap.min.js') }}"></script>
+	  <script src="{{ asset('lib/scripts/html5shiv.min.js') }}"></script>
+	  {% javascripts
+	  '@AppClientBundle/Resources/public/js/*.js' %}
+	  <script src="{{ asset_url }}"></script>
+	  {% endjavascripts %}
+	{% endblock %}
+
+You can also add stylesheeds and scripts from Symfony asset folder **/web**.
+
+Grunt task **Copy.js** will copy files from **/bower_components** folder to **/web/lib/css/** or **/web/lib/scripts/** folders. You can edit this task as you need.
+
+## Working with templates
 
 For set data from Symfony controller to AngularJS template, you need to insert AngularJS template inside Symfony template:
 
@@ -152,13 +195,23 @@ So we can only bind AngularJS data:
 		</div>
 	</div>
 
-## Testing
+## Runnig and Testing
 
 You can run a local server for development on port *http://localhost:8000/*
 
-```bash
-grunt serve
-```
+	grunt serve
+	
+Run server on production mode
+
+	grunt serve prod
+
+Build release
+		
+	grunt build
+
+### Grunt taks
+
+You can edit **Grunt.js** file por edit grunt task, on folder **/grunt**  as you need.
 
 ## License
 
