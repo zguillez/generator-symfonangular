@@ -10,23 +10,17 @@
 
 ### Install Yeoman
 
-```bash
-npm install -g yo
-```
+	npm install -g yo
 
 ### Yeoman Generators
 
 To install generator-symfonangular from npm, run:
 
-```bash
-npm install -g generator-symfonangular
-```
+	npm install -g generator-symfonangular
 
 Finally, initiate the generator:
 
-```bash
-yo symfonangular
-```
+	yo symfonangular
 
 If you have error on install try to update dependences manually:
 
@@ -35,7 +29,7 @@ sudo npm update
 ```
 
 ```bash
-bower update
+bower update --allow-root
 ```
 
 ```bash
@@ -49,15 +43,16 @@ bower update
 
 For update npm
 
-```bash
-sudo npm install npm -g
-```
+	sudo npm install npm -g
 
 ### Bower
 
-```bash
-npm install -g bower
-```
+	npm install -g bower
+
+### Sass
+
+	sudo gem install sass
+
 
 ## Usage
 
