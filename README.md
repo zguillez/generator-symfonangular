@@ -1,4 +1,5 @@
-# generator-symfonangular [![Build Status](https://secure.travis-ci.org/zguillez/generator-symfonangular.png?branch=master)](https://travis-ci.org/zguillez/generator-symfonangular) [![Code Climate](https://codeclimate.com/github/zguillez/generator-symfonangular/badges/gpa.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular)
+# generator-symfonangular
+[![Build Status](https://secure.travis-ci.org/zguillez/generator-symfonangular.png?branch=master)](https://travis-ci.org/zguillez/generator-symfonangular) [![Code Climate](https://codeclimate.com/github/zguillez/generator-symfonangular/badges/gpa.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zguillez/generator-symfonangular/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zguillez/generator-symfonangular/?branch=master)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
