@@ -1,0 +1,9 @@
+languages:
+  Ruby: true
+  JavaScript: true
+  PHP: true
+  Python: true
+exclude_paths:
+- "app/templates/app/SymfonyRequirements.php"
+- "app/templates/src/App/ClientBundle/DependencyInjection/AppClientExtension.php"
+- "app/templates/src/App/ServerBundle/DependencyInjection/AppServerExtension.php"
