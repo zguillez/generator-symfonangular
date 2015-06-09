@@ -1,6 +1,6 @@
 {
   "name": "generator-symfonangular",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Full stack development with (PHP) Symfony and (Javascript) AngularJS application",
   "license": "MIT",
   "main": "app/index.js",
