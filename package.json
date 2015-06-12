@@ -1,7 +1,7 @@
 {
   "name": "generator-symfonangular",
   "version": "0.3.7",
-  "description": "Full stack development with (PHP) Symfony and (Javascript) AngularJS application",
+  "description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "zguillez/generator-symfonangular",
