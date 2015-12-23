@@ -3,7 +3,7 @@
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-symfonangular.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular)
 [![Build Status](http://img.shields.io/travis/zguillez/generator-symfonangular.svg)](https://travis-ci.org/zguillez/generator-symfonangular)
 [![Coverage Status](http://img.shields.io/coveralls/zguillez/generator-symfonangular.svg)](https://coveralls.io/r/zguillez/generator-symfonangular)
-[![Dependency Status](https://gemnasium.com/zguillez/generator-base-angularjs.svg)](https://gemnasium.com/zguillez/generator-symfonangular)
+[![Dependency Status](https://gemnasium.com/zguillez/generator-symfonangular.svg)](https://gemnasium.com/zguillez/generator-symfonangular)
 ![](https://reposs.herokuapp.com/?path=zguillez/generator-symfonangular)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
