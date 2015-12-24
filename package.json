@@ -13,21 +13,12 @@
   "scripts": {
     "test": "mocha"
   },
-  "files": [
-    "app"
-  ],
-  "keywords": [
-    "yeoman-generator",
-    "symfony",
-    "angularjs",
-    "php",
-    "javascript",
-    "webapp"
-  ],
+  "files": ["app"],
+  "keywords": ["yeoman-generator", "symfony", "angularjs", "php", "javascript", "webapp"],
   "dependencies": {
-    "yeoman-generator": "^0.19.0",
-    "chalk": "^1.0.0",
-    "yosay": "^1.0.2"
+    "yeoman-generator": "^0.22.1",
+    "chalk": "^1.1.1",
+    "yosay": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"
