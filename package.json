@@ -1,6 +1,6 @@
 {
   "name": "generator-symfonangular",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
   "license": "MIT",
   "main": "app/index.js",
@@ -13,8 +13,17 @@
   "scripts": {
     "test": "mocha"
   },
-  "files": ["app"],
-  "keywords": ["yeoman-generator", "symfony", "angularjs", "php", "javascript", "webapp"],
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "symfony",
+    "angularjs",
+    "php",
+    "javascript",
+    "webapp"
+  ],
   "dependencies": {
     "yeoman-generator": "^0.22.1",
     "chalk": "^1.1.1",
