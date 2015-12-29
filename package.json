@@ -1,35 +1,46 @@
 {
-  "name": "generator-symfonangular",
-  "version": "0.3.8",
-  "description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
-  "license": "MIT",
-  "main": "app/index.js",
-  "repository": "zguillez/generator-symfonangular",
-  "author": {
-    "name": "Guillermo de la Iglesia",
-    "email": "mail@zguillez.io",
-    "url": "https://github.com/zguillez"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "app"
-  ],
-  "keywords": [
-    "yeoman-generator",
-    "symfony",
-    "angularjs",
-    "php",
-    "javascript",
-    "webapp"
-  ],
-  "dependencies": {
-    "yeoman-generator": "^0.22.1",
-    "chalk": "^1.1.1",
-    "yosay": "^1.1.0"
-  },
-  "devDependencies": {
-    "mocha": "*"
-  }
+	"name": "generator-symfonangular",
+	"version": "0.3.10",
+	"description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
+	"license": "MIT",
+	"main": "app/index.js",
+	"repository": "zguillez/generator-symfonangular",
+	"author": {
+		"name": "Guillermo de la Iglesia",
+		"email": "mail@zguillez.io",
+		"url": "https://github.com/zguillez"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"files": [
+		"app"
+	],
+	"keywords": [
+		"yeoman-generator",
+		"symfony",
+		"angularjs",
+		"php",
+		"javascript",
+		"webapp"
+	],
+	"dependencies": {
+		"yeoman-generator": "^0.22.2",
+		"chalk": "^1.1.1",
+		"yosay": "^1.1.0"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"grunt": "~0.4.5",
+		"load-grunt-tasks": "~3.4.0",
+		"grunt-contrib-connect": "~0.11.2",
+		"grunt-contrib-watch": "~0.6.1",
+		"grunt-contrib-clean": "~0.7.0",
+		"grunt-contrib-copy": "~0.8.2",
+		"grunt-contrib-uglify": "~0.11.0",
+		"grunt-contrib-sass": "~0.9.2",
+		"grunt-php": "~1.5.1",
+		"grunt-shell": "~1.1.2",
+		"bower": "~1.7.1"
+	}
 }
