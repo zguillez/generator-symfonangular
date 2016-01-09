@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black; }
+
+#wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%; }
+  #wrapper header, #wrapper footer {
+    display: table-row;
+    height: 1px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    color: darkgrey;
+    padding: 20px; }
+    #wrapper header nav ul, #wrapper footer nav ul {
+      padding: 0; }
+    #wrapper header nav ul li, #wrapper footer nav ul li {
+      display: inline-block; }
+      #wrapper header nav ul li a, #wrapper footer nav ul li a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer; }
+  #wrapper header {
+    position: relative; }
+    #wrapper header #logo-box {
+      margin: auto; }
+    #wrapper header nav {
+      position: absolute;
+      top: 10px;
+      right: 30px; }
+      #wrapper header nav ul li {
+        margin-left: 25px; }
+  #wrapper footer {
+    margin-top: 50px; }
+  #wrapper #content {
+    display: table-row;
+    position: relative;
+    text-align: center;
+    width: 1040px;
+    margin: auto; }
+
+/*# sourceMappingURL=styles.css.map */
+
+{
+"version": 3,
+"mappings": "AAUA,CAAC;EACG,UAAU,EAAE,UAAU;;AAE1B,UAAU;EACN,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAdL,KAAK;EAeV,WAAW,EAnBI,4BAA4B;EAoB3C,SAAS,EAnBI,IAAI;EAoBjB,KAAK,EAlBA,KAAK;;AAoBd,QAAQ;EACJ,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EAEhB,gCAAc;IACV,OAAO,EAAE,SAAS;IAClB,MAAM,EAAE,GAAG;IACX,KAAK,EAAE,IAAI;IACX,UAAU,EAAE,MAAM;IAClB,gBAAgB,EA/Bf,KAAK;IAgCN,cAAc,EAAE,SAAS;IACzB,KAAK,EA9BJ,QAAQ;IA+BT,OAAO,EAAE,IAAI;IAEb,8CAAM;MACF,OAAO,EAAE,CAAC;IAEd,oDAAS;MACL,OAAO,EAAE,YAAY;MAErB,wDAAC;QACG,eAAe,EAAE,IAAI;QACrB,KAAK,EA3CZ,KAAK;QA4CE,MAAM,EAAE,OAAO;EAE3B,eAAM;IACF,QAAQ,EAAE,QAAQ;IAElB,yBAAS;MACL,MAAM,EAAE,IAAI;IAEhB,mBAAG;MACC,QAAQ,EAAE,QAAQ;MAClB,GAAG,EAAE,IAAI;MACT,KAAK,EAAE,IAAI;MAEX,yBAAK;QACD,WAAW,EAAE,IAAI;EAE7B,eAAM;IACF,UAAU,EAAE,IAAI;EAEpB,iBAAQ;IACJ,OAAO,EAAE,SAAS;IAClB,QAAQ,EAAE,QAAQ;IAClB,UAAU,EAAE,MAAM;IAClB,KAAK,EA/DD,MAAM;IAgEV,MAAM,EAAE,IAAI",
+"sources": ["../../css/styles.sass"],
+"names": [],
+"file": "styles.css"
+}

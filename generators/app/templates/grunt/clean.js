@@ -1,12 +1,11 @@
 'use strict';
-
-module.exports = function (grunt) {
-
-  grunt.config.set('clean', {
-    scripts: {
-      src: ["web/scripts"]
-    }
-
-  });
-
+module.exports = function(grunt) {
+	grunt.config.set('clean', {
+		public: {
+			src: ["src/AppBundle/Resources/public"]
+		},
+		scripts: {
+			src: ["web/scripts"]
+		}
+	});
 };

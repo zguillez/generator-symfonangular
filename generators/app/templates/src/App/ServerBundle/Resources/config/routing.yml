@@ -1,3 +1,0 @@
-app_server_homepage:
-    path:     /admin
-    defaults: { _controller: AppServerBundle:Back:index }
