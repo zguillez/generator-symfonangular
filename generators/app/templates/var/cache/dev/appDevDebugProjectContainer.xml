@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/app</parameter>
+    <parameter key="kernel.root_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.name">ap_</parameter>
-    <parameter key="kernel.cache_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/logs</parameter>
+    <parameter key="kernel.name">app</parameter>
+    <parameter key="kernel.cache_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -47,7 +47,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/Volumes/Data/Repositorios/yeoman/symfonangular2/app/../var/sessions/dev</parameter>
+    <parameter key="session.save_path">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/../var/sessions/dev</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -61,7 +61,7 @@
     <parameter key="translator.logging">true</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/profiler</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -73,12 +73,12 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">Symfony\Component\Security\Core\Authentication\Token\RememberMeToken</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection"/>
@@ -172,7 +172,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -285,7 +285,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -311,7 +311,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>FrameworkBundle</parameter>
       <parameter>SecurityBundle</parameter>
@@ -335,8 +335,8 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">/Volumes/Data/Repositorios/yeoman/symfonangular2/app/../web</parameter>
-    <parameter key="assetic.write_to">/Volumes/Data/Repositorios/yeoman/symfonangular2/app/../web</parameter>
+    <parameter key="assetic.read_from">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/../web</parameter>
+    <parameter key="assetic.write_to">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
@@ -461,7 +461,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources</argument>
+                <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -494,7 +494,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources</argument>
+                <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -507,7 +507,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app</argument>
+                <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -532,7 +532,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>740cde1d12c4492e3833cba6f174beccfd0fea6d</argument>
@@ -649,239 +649,239 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ar.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ar.xlf</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.az.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.az.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.bg.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.bg.xlf</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ca.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ca.xlf</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.cs.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.cs.xlf</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.da.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.de.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.de.xlf</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.el.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.en.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/src/AppBundle/Resources/translations/messages.en.php</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.en.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/src/AppBundle/Resources/translations/messages.en.php</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.es.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/src/AppBundle/Resources/translations/messages.es.php</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.es.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/src/AppBundle/Resources/translations/messages.es.php</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fa.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fa.xlf</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fr.xlf</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.gl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.he.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.he.xlf</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hr.xlf</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hu.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hu.xlf</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.id.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.it.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.it.xlf</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ja.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ja.xlf</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lb.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lb.xlf</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lt.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lt.xlf</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nb.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nb.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nb.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.nl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.nl.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.no.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_BR.xlf</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ro.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ru.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ru.xlf</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sk.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sk.xlf</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sl.xlf</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Latn.xlf</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sv.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sv.xlf</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.th.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.th.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.tr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.vi.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.vi.xlf</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.zh_CN.xlf</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_PT.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_PT.xlf</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ua.xlf</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ua.xlf</argument>
           </argument>
         </argument>
       </argument>
@@ -1330,7 +1330,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev</argument>
     </service>
     <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface">
       <factory service="validator.builder" method="getValidator"/>
@@ -1357,7 +1357,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1390,7 +1390,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/profiler</argument>
+          <argument>file:/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/profiler</argument>
         </service>
       </argument>
       <argument type="service" id="monolog.logger.profiler" on-invalid="null"/>
@@ -1793,7 +1793,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56906db2bdfd20.75008549</argument>
+            <argument>56907aecb22545.53045175</argument>
           </service>
         </argument>
       </argument>
@@ -1922,7 +1922,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56906db2bdfd20.75008549</argument>
+            <argument>56907aecb22545.53045175</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -1968,7 +1968,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/twig</argument>
+        <argument key="cache">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2028,7 +2028,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2210,7 +2210,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/logs/dev.log</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2314,17 +2314,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_81082c66a4cf85ebccc628f0c3aabc49e72a87c3f2f2123a87fa4421bdb42659</argument>
+        <argument>sf2orm_default_89cfbd7f37a6586ff8b92f4555236e9cb1dca8752775f5d722f50c0e6b5442a4</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_81082c66a4cf85ebccc628f0c3aabc49e72a87c3f2f2123a87fa4421bdb42659</argument>
+        <argument>sf2orm_default_89cfbd7f37a6586ff8b92f4555236e9cb1dca8752775f5d722f50c0e6b5442a4</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_81082c66a4cf85ebccc628f0c3aabc49e72a87c3f2f2123a87fa4421bdb42659</argument>
+        <argument>sf2orm_default_89cfbd7f37a6586ff8b92f4555236e9cb1dca8752775f5d722f50c0e6b5442a4</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -2357,7 +2357,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/doctrine/orm/Proxies</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -2461,7 +2461,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/assetic/config</argument>
+                <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -2478,7 +2478,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FrameworkBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/FrameworkBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/FrameworkBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2486,7 +2486,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FrameworkBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2505,7 +2505,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SecurityBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/SecurityBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/SecurityBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2513,7 +2513,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SecurityBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2532,7 +2532,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>TwigBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/TwigBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/TwigBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2540,7 +2540,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>TwigBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2559,7 +2559,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>MonologBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/MonologBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/MonologBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2567,7 +2567,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>MonologBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/monolog-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/monolog-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2586,7 +2586,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SwiftmailerBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/SwiftmailerBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/SwiftmailerBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2594,7 +2594,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SwiftmailerBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2613,7 +2613,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/DoctrineBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/DoctrineBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2621,7 +2621,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/doctrine/doctrine-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2640,7 +2640,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioFrameworkExtraBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/SensioFrameworkExtraBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/SensioFrameworkExtraBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2648,7 +2648,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioFrameworkExtraBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/sensio/framework-extra-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/sensio/framework-extra-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2667,7 +2667,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AsseticBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/AsseticBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/AsseticBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2675,7 +2675,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AsseticBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/assetic-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/assetic-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2694,7 +2694,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AppBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/AppBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/AppBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2702,7 +2702,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AppBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/src/AppBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/src/AppBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2721,7 +2721,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DebugBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/DebugBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/DebugBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2729,7 +2729,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DebugBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2748,7 +2748,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>WebProfilerBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/WebProfilerBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/WebProfilerBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2756,7 +2756,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>WebProfilerBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2775,7 +2775,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioDistributionBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/SensioDistributionBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/SensioDistributionBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2783,7 +2783,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioDistributionBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/sensio/distribution-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/sensio/distribution-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2802,7 +2802,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioGeneratorBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/SensioGeneratorBundle/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/SensioGeneratorBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2810,7 +2810,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioGeneratorBundle</argument>
-                  <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/sensio/generator-bundle/Resources/views</argument>
+                  <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/sensio/generator-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -2826,7 +2826,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/views</argument>
+            <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -2841,7 +2841,7 @@
           <factory service="service_container" method="getParameterBag"/>
         </service>
       </argument>
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/../web</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -2858,7 +2858,7 @@
       <argument type="service" id="assetic.asset_manager"/>
       <argument type="service">
         <service class="Assetic\Cache\FilesystemCache" public="false">
-          <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/assetic/assets</argument>
+          <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/assetic/assets</argument>
         </service>
       </argument>
       <argument>false</argument>
@@ -3104,7 +3104,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/sessions</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -3128,9 +3128,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/assetic/routing.yml</argument>
+      <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev</argument>
+        <argument key="cache_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -3155,7 +3155,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/var/cache/dev/annotations</argument>
+          <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -3172,42 +3172,42 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/src/AppBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/src/AppBundle/Resources/views</argument>
         <argument>App</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/app/Resources/views</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/Volumes/Data/Repositorios/yeoman/symfonangular2/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
