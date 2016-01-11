@@ -1,4 +1,4 @@
 services:
     common:
-        class: App\AppBundle\Service\CommonService
-        arguments: [@session, @doctrine.orm.entity_manager, @mailer, @twig]
+        class: AppBundle\Service\CommonService
+        arguments: ['@session', '@doctrine.orm.entity_manager', '@mailer', '@twig']

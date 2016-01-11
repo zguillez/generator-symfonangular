@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppBundle\Service;
+namespace AppBundle\Service;
 
 class CommonService {
 	private $session;
@@ -16,6 +16,6 @@ class CommonService {
 	}
 	//------------------------------------------------
 	public function getTest() {
-		return "ok";
+		return 'Title from Symfony';
 	}
 }
