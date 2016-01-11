@@ -65,13 +65,13 @@ For update npm
 
 ## Usage
 
-Symfony routing on file */src/App/ClientBundle/Resources/config/routing.yml*:
+Symfony routing on file */src/AppBundle/Resources/config/routing.yml*:
 
 	_home:
 	    path:     /
-	    defaults: { _controller: AppClientBundle:App:home }
+	    defaults: { _controller: AppBundle:Defaults:index }
  
-AngularJS routing on file */src/App/ClientBundle/Resources/js/init.js*:
+AngularJS routing on file */src/AppBundle/Resources/js/init.js*:
 
 	$routeProvider.when('/home/a', {
 	    templateUrl: 'modules/slideA.html',
@@ -87,18 +87,18 @@ AngularJS routing on file */src/App/ClientBundle/Resources/js/init.js*:
 	  });
 
 ### AngularJS controllers
-Place on folder: */src/App/ClientBundle/Resources/js/*
+Place on folder: */src/AppBundle/Resources/js/*
 
 ### CSS styles
-Place on folder: */src/App/ClientBundle/Resources/css/* with .sass or .scss format
+Place on folder: */src/AppBundle/Resources/css/* with .sass or .scss format
 
 ### Conpiled files
 
 Grunt **serve** and **build** will compile .sass and .scss files into css files on folder:
-*/src/App/ClientBundle/Resources/public/css*
+*/src/AppBundle/Resources/public/css*
 
 And Javascript files will miminized into folder:
-*/src/App/ClientBundle/Resources/public/js*
+*/src/AppBundle/Resources/public/js*
 
 Symfony will include this files into template by Assetic mode:
 
@@ -107,7 +107,7 @@ Symfony will include this files into template by Assetic mode:
 	  <link rel="stylesheet" href="{{ asset('lib/css/animate.min.css') }}"/>
 	  <link rel="stylesheet" href="{{ asset('lib/css/bootstrap.min.css') }}"/>
 	  {% stylesheets
-	  '@AppClientBundle/Resources/public/css/*.css' filter='cssrewrite' %}
+	  '@AppBundle/Resources/public/css/*.css' filter='cssrewrite' %}
 	  <link rel="stylesheet" href="{{ asset_url }}"/>
 	  {% endstylesheets %}
 	{% endblock %}
@@ -120,7 +120,7 @@ Symfony will include this files into template by Assetic mode:
 	  <script src="{{ asset('lib/scripts/bootstrap.min.js') }}"></script>
 	  <script src="{{ asset('lib/scripts/html5shiv.min.js') }}"></script>
 	  {% javascripts
-	  '@AppClientBundle/Resources/public/js/*.js' %}
+	  '@AppBundle/Resources/public/js/*.js' %}
 	  <script src="{{ asset_url }}"></script>
 	  {% endjavascripts %}
 	{% endblock %}
@@ -134,8 +134,8 @@ Grunt task **Copy.js** will copy files from **/bower_components** folder to **/w
 For set data from Symfony controller to AngularJS template, you need to insert AngularJS template inside Symfony template:
 
 	<div id="container" class="container">
-	    {% include 'AppClientBundle::Page/modules/slideA.html.twig' %}
-	    {% include 'AppClientBundle::Page/modules/slideB.html.twig' %}
+	    {% include 'AppBundle::Page/modules/slideA.html.twig' %}
+	    {% include 'AppBundle::Page/modules/slideB.html.twig' %}
 	    <div class="row">
 	      <div class="col-xs-12">
 	        <div ng-view></div>
@@ -164,7 +164,7 @@ You can define AngularJS tag symbols on file *init.js*
 
 Usage on Symfony controller:
 
-	return $this->render('AppClientBundle:Page:home.html.twig', array(
+	return $this->render('AppBundle:Page:home.html.twig', array(
 	      'title' => 'Title from Symfony'
 	    ));
 
@@ -207,7 +207,7 @@ You can run a local server for development on port *http://localhost:8000/*
 	
 Run server on production mode
 
-	grunt serve prod
+	grunt serve:prod
 
 Build release
 		
@@ -217,6 +217,29 @@ Build release
 
 You can edit **Grunt.js** file por edit grunt task, on folder **/grunt**  as you need.
 
-## License
+# Contributing and issues
+Contributors are welcome, please fork and send pull requests! If you have any ideas on how to make this project better then please submit an issue or send me an [email](mailto:mail@zguillez.io).
 
-MIT
+# License
+©2015 Zguillez.io
+
+Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
+
+# Changelog
+## v2.1.0 (January 11, 2016)
+Fixes:
+
+* Production enviorement deploy
+
+## v2.0.0 (January 9, 2016)
+Update Symfony to 3.0.1
+
+## v1.0.0 (June 9, 2015)
+Initial Symfony2 Framework skeleton with AngularJS
+
+Features:
+
+* implements Symfony 2
+* implements AngularJS
+
+
