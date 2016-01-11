@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app/config/routing_dev.yml

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 			options: {
 				mangle: false,
 				beautify: true,
-				preserveComments: false,
+				preserveComments: true,
 				sourceMap: false
 			},
 			cwd: 'src/AppBundle/Resources/js',
@@ -16,9 +16,10 @@ module.exports = function(grunt) {
 		},
 		prod: {
 			options: {
-				mangle: true,
+				mangle: false,
+				report: 'min',
 				preserveComments: false,
-				sourceMap: true
+				sourceMap: false
 			},
 			cwd: 'src/AppBundle/Resources/js',
 			dest: 'src/AppBundle/Resources/public/js',
