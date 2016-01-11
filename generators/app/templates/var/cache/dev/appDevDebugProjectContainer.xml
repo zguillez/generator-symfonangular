@@ -4,7 +4,7 @@
     <parameter key="kernel.root_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.name">ap_</parameter>
+    <parameter key="kernel.name">app</parameter>
     <parameter key="kernel.cache_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">/Volumes/Data/Repositorios/yeoman/generator-symfonangular/generators/app/templates/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
@@ -1799,7 +1799,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5693fa1344d5e9.33863654</argument>
+            <argument>5693fbb5de3481.55185424</argument>
           </service>
         </argument>
       </argument>
@@ -1928,7 +1928,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>5693fa1344d5e9.33863654</argument>
+            <argument>5693fbb5de3481.55185424</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
