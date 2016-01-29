@@ -1,7 +1,5 @@
 # generator-symfonangular
 
-[![Join the chat at https://gitter.im/zguillez/generator-symfonangular](https://badges.gitter.im/zguillez/generator-symfonangular.svg)](https://gitter.im/zguillez/generator-symfonangular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![npm version](https://badge.fury.io/js/generator-symfonangular.svg)](https://badge.fury.io/js/generator-symfonangular)
 [![Build Status](http://img.shields.io/travis/zguillez/generator-symfonangular.svg)](https://travis-ci.org/zguillez/generator-symfonangular)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-symfonangular.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular)
@@ -10,6 +8,7 @@
 ![](https://reposs.herokuapp.com/?path=zguillez/generator-symfonangular)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 [![Analytics](https://ga-beacon.appspot.com/UA-1125217-30/zguillez/generator-symfonangular?pixel)](https://github.com/igrigorik/ga-beacon)
+[![Join the chat at https://gitter.im/zguillez/generator-symfonangular](https://badges.gitter.im/zguillez/generator-symfonangular.svg)](https://gitter.im/zguillez/generator-symfonangular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
