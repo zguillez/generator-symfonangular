@@ -1,7 +1,7 @@
 # generator-symfonangular
 
 [![npm version](https://badge.fury.io/js/generator-symfonangular.svg)](https://badge.fury.io/js/generator-symfonangular)
-[![Build Status](http://img.shields.io/travis/zguillez/generator-symfonangular.svg)](https://github.com/zguillez/generator-symfonangular)
+[![Build Status](http://img.shields.io/travis/zguillez/generator-symfonangular.svg)](https://travis-ci.org/zguillez/generator-symfonangular)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-symfonangular.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular)
 [![Dependency Status](https://gemnasium.com/zguillez/generator-symfonangular.svg)](https://gemnasium.com/zguillez/generator-symfonangular)
 [![Installs](https://img.shields.io/npm/dt/generator-symfonangular.svg)](https://coveralls.io/r/zguillez/generator-symfonangular)
