@@ -1,3 +1,4 @@
+'use strict';
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
@@ -37,9 +38,9 @@ module.exports = yeoman.generators.Base.extend({
 	install: function() {
 		var scope = this;
 		this.installDependencies(function() {
-			scope.spawnCommand(
-				"echo -e '\033[0;32m\n\n** Install Done! **\n\nInstall Symfony vendors running this command:\n\033[0;33m./composer.phar self-update && ./composer.phar install\n\n\033[0m'"
-			);
+			console.log('\n\n' + chalk.underline.green('** Install Done! **') + '\n\n' + chalk.green(
+				'Install Symfony vendors running this command:') + '\n' + chalk.yellow(
+				'./composer.phar self-update && ./composer.phar install') + '\n\n');
 		});
 	}
 });
