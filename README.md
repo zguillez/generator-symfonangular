@@ -27,7 +27,10 @@ To install generator-symfonangular from npm, run:
 
 	npm install -g generator-symfonangular
 
-Finally, initiate the generator:
+	//or:
+	sudo npm install -g generator-symfonangular
+
+Finally, initiate the generator: 
 
 	yo symfonangular
 
@@ -41,9 +44,12 @@ sudo npm update
 bower update --allow-root
 ```
 
-```bash
-./composer.phar update
-```
+### Install Symfony vendors with Composer
+
+After generator install, you will need install Symfony vendor running this command:
+
+	./composer.phar self-update && ./composer.phar install
+
 ## Requeriments
 
 ### NodeJS
@@ -226,6 +232,13 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+## v2.2.0 (January 29, 2016)
+Remove Symfony vendors auto install.
+
+Fixes:
+
+* Composer autoload error on install generator.
+
 ## v2.1.0 (January 11, 2016)
 Fixes:
 
