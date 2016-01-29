@@ -39,9 +39,6 @@ module.exports = yeoman.generators.Base.extend({
 		var scope = this;
 		this.installDependencies(function() {
 			scope.spawnCommand('./composer.phar', ['self-update']);
-			setTimeout(function() {
-				scope.spawnCommand('./composer.phar', ['install']);
-			}, 1000);
 		});
 	}
 });
