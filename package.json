@@ -1,6 +1,6 @@
 {
 	"name": "generator-symfonangular",
-	"version": "2.1.5",
+	"version": "2.1.6",
 	"description": "PHP Symfony 3 framework with Javascript AngularJS framework integration for full stack development.",
 	"license": "MIT",
 	"main": "app/index.js",
@@ -25,7 +25,7 @@
 		"webapp"
 	],
 	"dependencies": {
-		"yeoman-generator": "^0.22.2",
+		"yeoman-generator": "^0.22.5",
 		"chalk": "^1.1.1",
 		"yosay": "^1.1.0"
 	},
@@ -41,6 +41,6 @@
 		"grunt-contrib-sass": "~0.9.2",
 		"grunt-php": "~1.5.1",
 		"grunt-shell": "~1.1.2",
-		"bower": "~1.7.1"
+		"bower": "~1.7.7"
 	}
 }

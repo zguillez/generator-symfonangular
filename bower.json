@@ -13,13 +13,13 @@
 	"dependencies": {
 		"requirejs": "~2.1.22",
 		"html5shiv": "~3.7.3",
-		"modernizr": "~3.2.0",
+		"modernizr": "~3.3.1",
 		"normalize.css": "~3.0.3",
-		"angular": "~1.4.8",
+		"angular": "~1.4.9",
 		"bootstrap": "~3.3.6",
-		"jquery": "~2.1.4",
-		"animate.css": "~3.5.0",
-		"angular-route": "~1.4.8"
+		"jquery": "~2.2.0",
+		"animate.css": "~3.5.1",
+		"angular-route": "~1.4.9"
 	},
 	"devDependencies": {}
 }
