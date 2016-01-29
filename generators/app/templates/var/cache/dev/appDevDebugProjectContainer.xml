@@ -184,6 +184,7 @@
     </parameter>
     <parameter key="swiftmailer.default_mailer">default</parameter>
     <parameter key="doctrine_cache.apc.class">Doctrine\Common\Cache\ApcCache</parameter>
+    <parameter key="doctrine_cache.apcu.class">Doctrine\Common\Cache\ApcuCache</parameter>
     <parameter key="doctrine_cache.array.class">Doctrine\Common\Cache\ArrayCache</parameter>
     <parameter key="doctrine_cache.chain.class">Doctrine\Common\Cache\ChainCache</parameter>
     <parameter key="doctrine_cache.couchbase.class">Doctrine\Common\Cache\CouchbaseCache</parameter>
@@ -203,6 +204,10 @@
     <parameter key="doctrine_cache.mongodb.collection.class">MongoCollection</parameter>
     <parameter key="doctrine_cache.mongodb.connection.class">MongoClient</parameter>
     <parameter key="doctrine_cache.mongodb.server">localhost:27017</parameter>
+    <parameter key="doctrine_cache.predis.client.class">Predis\Client</parameter>
+    <parameter key="doctrine_cache.predis.scheme">tcp</parameter>
+    <parameter key="doctrine_cache.predis.host">localhost</parameter>
+    <parameter key="doctrine_cache.predis.port">6379</parameter>
     <parameter key="doctrine_cache.redis.class">Doctrine\Common\Cache\RedisCache</parameter>
     <parameter key="doctrine_cache.redis.connection.class">Redis</parameter>
     <parameter key="doctrine_cache.redis.host">localhost</parameter>
@@ -1799,7 +1804,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56ab2d2dcd6848.52340699</argument>
+            <argument>56ab31d5708446.17744720</argument>
           </service>
         </argument>
       </argument>
@@ -1928,7 +1933,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56ab2d2dcd6848.52340699</argument>
+            <argument>56ab31d5708446.17744720</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
