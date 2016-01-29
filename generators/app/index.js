@@ -38,8 +38,9 @@ module.exports = yeoman.generators.Base.extend({
 	install: function() {
 		var scope = this;
 		this.installDependencies(function() {
-			scope.spawnCommand('./composer.phar', ['self-update']);
-			console.log("\n\nInstall Done!\n\nInstall symfony vendors with:\n./composer.phar install\n\n");
+			scope.spawnCommand(
+				"echo -e '\033[0;32m\n\n** Install Done! **\n\nInstall Symfony vendors running this command:\n\033[0;33m./composer.phar self-update && ./composer.phar install\n\n\033[0m'"
+			);
 		});
 	}
 });
