@@ -1,6 +1,6 @@
 {
 	"name": "generator-symfonangular",
-	"version": "2.0.0",
+	"version": "2.2.12",
 	"description": "PHP Symfony 3 framework with Javascript AngularJS framework integration for full stack development.",
 	"license": "MIT",
 	"main": "app/index.js",
@@ -11,15 +11,15 @@
 		"url": "https://github.com/zguillez"
 	},
 	"dependencies": {
-		"requirejs": "~2.1.22",
+		"requirejs": "~2.2.0",
 		"html5shiv": "~3.7.3",
 		"modernizr": "~3.3.1",
-		"normalize.css": "~3.0.3",
-		"angular": "~1.4.9",
+		"normalize.css": "~4.0.0",
+		"angular": "~1.5.2",
 		"bootstrap": "~3.3.6",
-		"jquery": "~2.2.0",
+		"jquery": "~2.2.2",
 		"animate.css": "~3.5.1",
-		"angular-route": "~1.4.9"
+		"angular-route": "~1.5.2"
 	},
 	"devDependencies": {}
 }
