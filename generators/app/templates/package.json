@@ -1,30 +1,30 @@
 {
-	"name": "generator-symfonangular",
-	"version": "2.2.12",
-	"description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
-	"license": "MIT",
-	"main": "app/index.js",
-	"repository": "zguillez/generator-symfonangular",
-	"author": {
-		"name": "Guillermo de la Iglesia",
-		"email": "mail@zguillez.io",
-		"url": "https://github.com/zguillez"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"grunt": "~1.0.1",
-		"load-grunt-tasks": "~3.5.0",
-		"grunt-contrib-connect": "~1.0.1",
-		"grunt-contrib-watch": "~1.0.0",
-		"grunt-contrib-clean": "~1.0.0",
-		"grunt-contrib-copy": "~1.0.0",
-		"grunt-contrib-uglify": "~1.0.1",
-		"grunt-contrib-sass": "~1.0.0",
-		"grunt-php": "~1.5.1",
-		"grunt-shell": "~1.2.1",
-		"bower": "~1.7.9"
-	},
-	"engines": {
-		"node": ">=0.10.0"
-	}
+  "name": "generator-symfonangular",
+  "version": "2.2.12",
+  "description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "zguillez/generator-symfonangular",
+  "author": {
+    "name": "Guillermo de la Iglesia",
+    "email": "mail@zguillez.io",
+    "url": "https://github.com/zguillez"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "~1.7.9",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-connect": "~1.0.1",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-php": "~1.5.1",
+    "grunt-shell": "~1.2.1",
+    "load-grunt-tasks": "~3.5.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }
