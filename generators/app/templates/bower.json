@@ -15,11 +15,11 @@
 		"html5shiv": "~3.7.3",
 		"modernizr": "~3.3.1",
 		"normalize.css": "~4.0.0",
-		"angular": "~1.5.2",
+		"angular": "~1.5.3",
 		"bootstrap": "~3.3.6",
-		"jquery": "~2.2.2",
+		"jquery": "~2.2.3",
 		"animate.css": "~3.5.1",
-		"angular-route": "~1.5.2"
+		"angular-route": "~1.5.3"
 	},
 	"devDependencies": {}
 }
