@@ -1,6 +1,6 @@
 {
   "name": "generator-symfonangular",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "PHP Symfony 3 framework with Javascript AngularJS framework integration for full stack development.",
   "homepage": "",
   "author": {
@@ -13,6 +13,7 @@
   ],
   "main": "generators/index.js",
   "keywords": [
+    "",
     "yeoman-generator",
     "symfony",
     "angularjs",
@@ -64,7 +65,7 @@
       "mocha": true
     }
   },
-  "repository": "/generator-test",
+  "repository": "/generator-symfonangular",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
