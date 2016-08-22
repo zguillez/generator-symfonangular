@@ -1,7 +1,7 @@
 {
   "name": "generator-symfonangular",
-  "version": "2.2.12",
-  "description": "PHP Symfony framework with Javascript AngularJS framework integration for full stack development.",
+  "version": "2.3.2",
+  "description": "PHP Symfony 3 framework with Javascript AngularJS framework integration for full stack development.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "zguillez/generator-symfonangular",
@@ -18,11 +18,11 @@
     "grunt-contrib-connect": "~1.0.2",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-contrib-sass": "~1.0.0",
-    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-php": "~1.5.1",
-    "grunt-shell": "~1.3.0",
-    "load-grunt-tasks": "~3.5.0"
+    "grunt-shell": "~1.3.1",
+    "load-grunt-tasks": "~3.5.2"
   },
   "engines": {
     "node": ">=0.10.0"
