@@ -28,6 +28,8 @@
   "devDependencies": {
     "yeoman-test": "^1.4.0",
     "yeoman-assert": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-xo-space": "^0.14.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-exclude-gitignore": "^1.0.0",
@@ -56,10 +58,16 @@
       "mocha": true
     }
   },
-  "repository": "/zguillez/generator-base-backbone",
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "/generator-test",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "Apache-2.0"
+  "license": "MIT"
 }
