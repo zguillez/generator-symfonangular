@@ -232,6 +232,9 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+## v2.4.0 (August 22, 2016)
+Update Node and Bower dependencies.
+
 ## v2.2.0 (January 29, 2016)
 Remove Symfony vendors auto install.
 
