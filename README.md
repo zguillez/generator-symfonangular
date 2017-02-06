@@ -1,5 +1,7 @@
 # generator-symfonangular
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zguillez/generator-symfonangular.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/generator-symfonangular.svg)](https://badge.fury.io/js/generator-symfonangular)
 [![Build Status](http://img.shields.io/travis/zguillez/generator-symfonangular.svg)](https://travis-ci.org/zguillez/generator-symfonangular)
 [![Code Climate](http://img.shields.io/codeclimate/github/zguillez/generator-symfonangular.svg)](https://codeclimate.com/github/zguillez/generator-symfonangular)
