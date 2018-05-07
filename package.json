@@ -51,7 +51,7 @@
     "grunt-contrib-watch": "~1.0.0",
     "grunt-php": "~1.5.1",
     "grunt-shell": "~2.1.0",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^4.0.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
