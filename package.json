@@ -50,7 +50,7 @@
     "grunt-contrib-uglify": "~2.1.0",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-php": "~1.5.1",
-    "grunt-shell": "~2.1.0",
+    "grunt-shell": "~3.0.0",
     "load-grunt-tasks": "^3.5.2"
   },
   "eslintConfig": {
