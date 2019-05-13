@@ -49,7 +49,7 @@
     "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-uglify": "~2.1.0",
     "grunt-contrib-watch": "~1.0.0",
-    "grunt-php": "~1.5.1",
+    "grunt-php": "~2.0.0",
     "grunt-shell": "~2.1.0",
     "load-grunt-tasks": "^3.5.2"
   },
